@@ -17,14 +17,16 @@ let sayHello2 = function() {
 } 
 sayHello2()
 
-let product1 = {productName:"Elma", quantity:5, unitPrice:10}
+let product1 = {
+    productName:"Elma", quantity:5, unitPrice:10
+}
 
 
 
 function addToCart2(product) {
     console.log("Ürün :",product.productName)
     console.log("Adet : ", product.quantity)
-    console.log("Adet : ", product.unitPrice)
+    console.log("Fiyat : ", product.unitPrice)
 }
 product1.productName = "Karpuz"
 addToCart2(product1)
@@ -47,6 +49,8 @@ let products = [
 ]
 addToCart4(products)
 
+let numbers = [30,10,50,100]
+
             //rest operatörü
 function add(...numbers) { //başka parametre varsa başa yaz sona yazılırsa rest olduğu içn okunmaz
     for(let i = 0; i<numbers.length; i++)
@@ -54,8 +58,8 @@ function add(...numbers) { //başka parametre varsa başa yaz sona yazılırsa r
 }
 add(20,30)
 add(20,30,40,50)
+add(numbers)
 
-let numbers = [30,10,50,100]
 console.log(...numbers) //ayır
 console.log(Math.max(...numbers))
 
@@ -73,9 +77,7 @@ let [icAnadolu, marmara,karadeniz,[icAnadoluSehirleri,marmaraSehirleri,karadeniz
 ]
 //console.log(icAnadolu.name)
 //console.log(icAnadolu.population)
+console.log(icAnadolu.name)
 console.log(icAnadoluSehirleri)
 
-let newProductName, newUnitPrice, newQuantity
-({productName:newProductName, unitPrice:newunitPrice, quantity:newQuantity} = {productName:"Elma", quantity:5, unitPrice:10})
-console.log(newProductName)
 
