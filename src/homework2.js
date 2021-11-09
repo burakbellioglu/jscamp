@@ -6,9 +6,11 @@ function findPrime(...numbers) {
     let primeNumbers = []
     let nonPrimeNumbers = []
 
+    //her sayıyı çağır
     for(let i = 0; i <= numbers.length; i++) 
     {
 
+        //asal mı?
         for(let j = 2; j < numbers[i]; j++) 
         {
             //Asal olmayan bir sayıdan sonra isItPrime false döndüğü için döngü başına true.
@@ -73,7 +75,7 @@ function friendsNumbers(...number) {
 
 }
 
-friendsNumbers(15,284)
+friendsNumbers(220,284)
 
 
 //----------------------------------------------
@@ -101,6 +103,8 @@ for (let i = 1; i <= 1000; i++)
 //----------------------------------------------
 
 //1000'e kadarki tüm asal sayıları listeleyen programı yazınız.
+
+//asal mı?
 function isItPrimeNumber(number1) 
 {
 
@@ -126,7 +130,10 @@ function isItPrimeNumber(number1)
         } 
 }
 
-for (let i = 1; i <= 1000; i++){
+
+
+for (let i = 1; i <= 1000; i++)
+{
     isItPrimeNumber(i)
 }
 
