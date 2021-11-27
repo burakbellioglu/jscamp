@@ -2,6 +2,11 @@
 //her sayi için asal mı değil mi?
 
 //FIND PRİME
+
+
+
+
+
 function findPrime(...numbers) {
     let primeNumbers = []
     let nonPrimeNumbers = []
@@ -136,4 +141,7 @@ for (let i = 1; i <= 1000; i++)
 {
     isItPrimeNumber(i)
 }
+
+
+
 
